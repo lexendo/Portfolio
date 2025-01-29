@@ -1,0 +1,18 @@
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
