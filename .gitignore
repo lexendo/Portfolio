@@ -1,41 +1,45 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
 # Compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
 
-# Node
+# Node dependencies
 /node_modules
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
 npm-debug.log
 yarn-error.log
 
+# Angular build artifacts
+/.angular/cache
+/.angular/cli
+/.angular/compiler
+
 # IDEs and editors
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# Visual Studio Code
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
+.history/
+*.iml
+
+# WebStorm specific
+*.ipr
+*.iws
 
 # Miscellaneous
-/.angular/cache
 .sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
 testem.log
-/typings
+connect.lock
+coverage/
+libpeerconnection.log
+
+# Environment variables (avoid committing secrets)
+src/environments/*.ts
 
 # System files
 .DS_Store
